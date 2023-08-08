@@ -1,3 +1,4 @@
+
 # 使用官方 Node.js 镜像作为基础镜像
 FROM node:lts-alpine3.18
 
@@ -8,6 +9,7 @@ WORKDIR /app
 COPY . .
 
 # EXPOSE 3000
+# Remove the commented "EXPOSE 3000" line since it is not necessary anymore.
 
 # 安装应用程序的依赖
 RUN npm install
